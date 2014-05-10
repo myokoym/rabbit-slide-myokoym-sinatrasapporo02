@@ -7,7 +7,7 @@ Rabbit::Task::Slide.new do |task|
   spec = task.spec
   # task.spec.files += Dir.glob("doc/**/*.*")
   # task.spec.files -= Dir.glob("private/**/*.*")
-  # task.spec.add_runtime_dependency("YOUR THEME")
+  task.spec.add_runtime_dependency("rabbit-theme-nyankosakana", ">= 1.0.4")
 end
 
 desc "Tag #{spec.version}"
