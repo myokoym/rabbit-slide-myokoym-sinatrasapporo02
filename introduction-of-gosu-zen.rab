@@ -73,9 +73,71 @@
 (('note:Linuxでは事前にSDLなどをインストールしておく（See https://github.com/jlnr/gosu/wiki/Getting-Started-on-Linux）'))\n
 (('note:OS Xは？（試してみてください！）'))\n
 
+= こんな感じで書きます
+
+  # coderay ruby
+  require "gosu"
+
+  # 1フレームごとにupdateとdrawが呼ばれる
+  class Window < Gosu::Window
+    def update
+      # 主要ロジック（移動、衝突判定など）
+    end
+
+    def draw
+      # 描画コード（ロジックは含めない）
+    end
+  end
+
+= 実行例
+
+  # coderay ruby
+
+  width  = 800
+  height = 600
+  fullscreen = false
+
+  window = Window.new(width,
+                      height,
+                      fullscreen)
+
+  # メインループ開始（デフォルトは60fps）
+  window.show
+
 = Gosu 0.8
 
   * 次期リリース版
+    * gem install gosu --pre
   * SDL2ベース
+    * Raspbian（Raspberry Pi）対応
     * Android対応予定
-  * Raspbian（Raspberry Pi対応）
+
+= その名は…\n\nGosu::((*Zen*))
+
+= Gosu::Zen is 何
+
+  * GosuのSinatra風ラッパー
+  * Zen was inspired by:
+    * http://www.sinatrarb.com/configuration.html
+  * まだ実験段階（仕様変更あり）
+
+= こんな感じで書きます
+
+  # coderay ruby
+  require "gosu/zen"
+  include Gosu::Zen
+
+  update do
+    # 主要ロジック（移動、衝突判定など）
+  end
+
+  draw do
+    # 描画コード（ロジックは含めない）
+  end
+
+= デモ
+
+== property
+
+:as_large_as_possible
+  true
