@@ -34,9 +34,8 @@
 
 = そんなあなたに
 
-  * ((*Sinatra*))っぽい文法で
-  * ((*ゲーム*))を書ける
-  * ライブラリのご紹介です。
+(('tag:center'))
+Sinatraっぽい文法でゲームを書けるライブラリのご紹介です。
 
 = その名は…\n\nGosu::Zen
 
@@ -69,9 +68,9 @@
 
     gem install gosu
 
-(('note:WindowsはRuby1.9のみ対応'))\n
-(('note:Linuxでは事前にSDLなどをインストールしておく（See https://github.com/jlnr/gosu/wiki/Getting-Started-on-Linux）'))\n
-(('note:OS Xは？（試してみてください！）'))\n
+(('note:・WindowsはRuby1.9のみ対応'))\n
+(('note:・Linuxでは事前にSDLなどをインストールしておく（See https://github.com/jlnr/gosu/wiki/Getting-Started-on-Linux）'))\n
+(('note:・OS Xは？（試してみてください！）'))
 
 = こんな感じで書きます
 
@@ -108,11 +107,13 @@
 
   * 次期リリース版
     * gem install gosu --pre
-  * SDL2ベース
+  * SDL((*2*))ベース
     * Raspbian（Raspberry Pi）対応
     * Android対応予定
 
-= その名は…\n\nGosu::((*Zen*))
+= 以下本題。
+
+= Gosu::((*Zen*))
 
 = Gosu::Zen is 何
 
